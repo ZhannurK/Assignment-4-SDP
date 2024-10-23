@@ -18,6 +18,10 @@ class OperationExpression implements Expression {
                 return leftExpression.interpret() + rightExpression.interpret();
             case '-':
                 return leftExpression.interpret() - rightExpression.interpret();
+            case '*':
+                return leftExpression.interpret() * rightExpression.interpret();
+            case '/':
+                return leftExpression.interpret() / rightExpression.interpret();
             default:
                 throw new UnsupportedOperationException("Unsupported operation");
         }
