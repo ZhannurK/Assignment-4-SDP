@@ -10,6 +10,5 @@ public class Main {
         agency.addObserver(channel2);
 
         agency.setLatestNews("Breaking News: New Observer Pattern Implemented!");
-        // Both channels will receive the update
     }
 }
